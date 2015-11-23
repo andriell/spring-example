@@ -5,6 +5,4 @@ package com.apress.prospring4.ch2;
  */
 public interface MessageRenderer {
     public void render() throws Exception;
-    public MessageProvider getMessageProvider();
-    public void setMessageProvider(MessageProvider messageProvider);
 }
