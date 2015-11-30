@@ -8,7 +8,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class HelloWorldSpringDI {
     public static void main(String[] args) throws Exception {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("META-INF/spring/app-context.xml");
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("META-INF/spring/app-context.xml");
+        // Без этого событие destroy для бинов не будет вызвано
+        applicationContext.registerShutdownHook();
         MessageRenderer messageRenderer = applicationContext.getBean("renderer", MessageRenderer.class);
         messageRenderer.render();
     }
