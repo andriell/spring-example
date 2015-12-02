@@ -1,5 +1,7 @@
 package com.apress.prospring4.ch4;
 
+import org.springframework.security.crypto.codec.Hex;
+
 import java.security.MessageDigest;
 
 /**
@@ -29,6 +31,6 @@ public class MessageDigester {
         digest.reset();
         byte[] bytes = msg.getBytes();
         byte[] out = digest.digest(bytes);
-        System.out.println(out);
+        System.out.println(Hex.encode(out));
     }
 }
