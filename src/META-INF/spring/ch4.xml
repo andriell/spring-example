@@ -11,4 +11,5 @@
               <property name="digest1" ref="shaDigest" />
               <property name="digest2" ref="defaultDigest" />
        </bean>
+       <bean id="messageEventListener" class="com.apress.prospring4.ch4.MessageEventListener" />
 </beans>
