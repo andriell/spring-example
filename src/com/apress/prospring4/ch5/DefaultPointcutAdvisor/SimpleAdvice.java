@@ -4,6 +4,7 @@ import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 
 /**
+ * Это совет "вокруг"
  * Created by Андрей on 23.12.2015.
  */
 public class SimpleAdvice implements MethodInterceptor {
