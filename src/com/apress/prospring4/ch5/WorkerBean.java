@@ -5,7 +5,7 @@ package com.apress.prospring4.ch5;
  */
 public class WorkerBean {
     public void doSomeWork(int noOfTimes) {
-        for (int õ = 0; õ < noOfTimes; õ++) {
+        for (int x = 0; x < noOfTimes; x++) {
             work();
         }
     }
